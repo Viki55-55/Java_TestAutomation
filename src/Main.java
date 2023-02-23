@@ -5,7 +5,7 @@ public class Main {
         String input;
         int type;
 
-    public MorseCode() {
+    public Morse () {
             this.input = "";
             this.type = 0;
         }
@@ -16,7 +16,6 @@ public class Main {
 
         public void setInput() {
             Scanner input = new Scanner(System.in);
-            System.out.println("Zin");
             this.input = input.nextLine();
         }
 
@@ -26,7 +25,7 @@ public class Main {
 
         public void setType() {
             Scanner input = new Scanner(System.in);
-            System.out.println("mors");
+
             this.type = input.nextInt();
         }
     }

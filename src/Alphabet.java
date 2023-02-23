@@ -46,7 +46,7 @@ public class Alphabet
             builder.append(morse.get(Character.toString(letter)));
         }
 
-        System.out.println(builder.toString());
+        System.out.println(builder.toString()); // print the code
         scan.close();
     }
 }
