@@ -1,27 +1,26 @@
-public class Test_Junit
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class TestingwithJUnit {
+public class TestingwithJUnit { //Make Morse
     @Test
     public void Test1() {
-        Morse myInput_Words = new Morse();
-        int Actual_Result = myInput_Words.getInput();
+        Alphabet myInput = new Alphabet();
+        int Actual_Result = myInput.getInput();
         int Expected_Result = 0;
         Assert.assertEquals(Actual_Result, Expected_Result);
     }
     @Test
     public void Test2() {
-        Morse myInput_Words = new Morse();
-        myInput_Words.setInput("some text");
-        int Actual_Result = myInput_Words.getInput();
+        Alphabet myInput = new Alphabet();
+        myInput.getInput("some text");
+        int Actual_Result = myInput.getInput();
         int Expected_Result = 1;
         Assert.assertEquals(Actual_Result, Expected_Result);
     }
     @Test
     public void return_check(){
         public void return_check_char(){
-            assertThat(Morse.get("-")).isEqualTo("a");
+            AssertThat(Alphabet.get("-")).isEqualTo("a");
         }
 
         @Test

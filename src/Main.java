@@ -1,32 +1,26 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        String input;
-        int type;
+    public static void main(String[] args)
+    {
+       String input, morse_code;
 
-    public Morse () {
-            this.input = "";
-            this.type = 0;
-        }
+    //Change Main with:
+    //Read text from user
+    //Print result on the screen
 
-        public String getInput() {
-            return input;
-        }
+       public String getInput()
+    {
+       Scanner scan= new Scanner(System.in);// read the sentence
+       System.out.println("Enter your sentence to get Morse code for it: ");
+       this.input = scan.nextLine();
 
-        public void setInput() {
-            Scanner input = new Scanner(System.in);
-            this.input = input.nextLine();
-        }
 
-        public int getType() {
-            return type;
-        }
-
-        public void setType() {
-            Scanner input = new Scanner(System.in);
-
-            this.type = input.nextInt();
-        }
     }
-}
+       public void PrintMorse()
+    {
+
+        System.out.println(morse_code); // print the code
+    }
+  }
+
