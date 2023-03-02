@@ -18,15 +18,9 @@ public class TestingwithJUnit { //Make Morse
         Assert.assertEquals(Actual_Result, Expected_Result);
     }
     @Test
-    public void return_check(){
-        public void return_check_char(){
+    public void return_Morse_1(){
+        {
             AssertThat(Alphabet.get("-")).isEqualTo("a");
         }
-
-        @Test
-        public void return_word_check(){
-            public void retur_word_check_Morse(){
-                assertThat(Morse.get("---")).isEqualTo("aaa");
-            }
-
-        }
+    }
+}

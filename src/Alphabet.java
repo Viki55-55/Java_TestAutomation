@@ -38,7 +38,6 @@ public class Alphabet
         morse.put(" ", "/");
 
 
-
         // English to Morse
         final StringBuilder builder = new StringBuilder(); //StringBilder is a class to create a modifiable succession of characters.
         for (final char letter : input.toCharArray()) {
